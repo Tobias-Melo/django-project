@@ -1,0 +1,185 @@
+* {
+     padding: 0;
+     margin: 0;
+     vertical-align: baseline;
+     list-style: none;
+     border: 0;
+     text-decoration: none;
+}
+
+
+header {
+     background-color: #ffffff;
+     padding: 10px 0;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+     top: 0;
+     left: 0;
+     width: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 13px;
+}
+
+.container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1100px;
+     margin: 0 auto;
+     padding: 0 20px;
+     font-size: 13px;
+}
+
+nav ul {
+     display: flex;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     font-size: 13px;
+}
+
+nav li {
+     margin-right: 20px;
+}
+
+nav a {
+     color: #333;
+     font-size: 13px;
+     font-weight: 400;
+     padding: 0 15px;
+     border: 1px dotted #ffffff;
+}
+
+nav a:focus {
+     border: 1px dotted #000;
+     padding: 10px 15px;
+}
+
+nav a:hover {
+     padding: 3px 15px;
+     border-bottom: 2px solid #000;
+}
+
+.person {
+     width: 35px;
+     padding: 0 5px;
+}
+
+.logo {
+     width: 110px;
+}
+
+.login {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0 5px;
+}
+
+.cadastro {
+     border: 1px dotted #ffffff;
+}
+
+.cadastro:focus {
+     border: 1px dotted #000;
+}
+
+.login span {
+     color: #333;
+     text-decoration: none;
+     font-size: 13px;
+     font-weight: 400;
+     padding: 0 0 0 5px;
+}
+
+/* ABAIXO DO HEADER */
+
+.video {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1000;
+     -webkit-filter: brightness(0.4);
+     filter: brightness(0.4);
+}
+
+.video_home {
+     -webkit-transition: all 0.8s ease-in-out;
+     transition: all 0.8s ease-in-out;
+     width: 100vh;
+     align-self: center;
+     height: 640px;
+     width: 100%;
+     object-fit: cover;
+}
+
+.video {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.texto-principal {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: Arial, Helvetica, sans-serif;
+     flex-direction: column;
+     row-gap: 15px;
+     height: 500px;
+}
+
+.texto-principal h1 {
+     color: white;
+     font-size: 30px;
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+
+}
+
+.texto-principal p {
+     color: white;
+     font-size: 19px;
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+     font-weight: 100;
+}
+
+.texto-principal span {
+     color: #ea4c89;
+     padding: 5px;
+     border-radius: 10px;
+     background-color: white;
+}
+
+.dpt {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 17px;
+     line-height: 25px;
+}
+
+.dpt-div {
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     row-gap: 10px;
+     padding: 20px;
+     width: 50%;
+     border-left: 20px solid #ea4c89;
+     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dpt-div p:nth-child(2) {
+     text-align: right;
+     color: #686868;
+}
+.dpt-div p:nth-child(3) {
+     text-align: right;
+     color: #929292;
+}

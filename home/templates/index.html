@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+     <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+     <script src="{% static 'home/js/app.js' %}"></script>
+     <title>Student - A Sua Plataforma de Respostas</title>
+</head>
+
+<body>
+
+     <header>
+          <div class="container">
+               <div class="logo">
+                    <a href="#"><img src="{% static 'home/img/logo.svg' %}" alt="Logo da empresa."></a>
+               </div>
+               <nav>
+                    <ul>
+                         <li><a href="#" class="menu-item">Sobre</a></li>
+                         <li><a href="#" class="menu-item">Preços</a></li>
+                         <li><a href="#" class="menu-item">Inteligência Artificial</a></li>
+                    </ul>
+               </nav>
+               <a href="" class="cadastro">
+                    <div class="login">
+                         <span>Entrar</span>
+                         <img class="person" src="{% static 'home/img/person.svg' %}"
+                              alt="Círculo com um símbolo de pessoa no centro.">
+                    </div>
+               </a>
+          </div>
+     </header>
+
+     <div class="texto-principal">
+          <h1>A IA tem revolucionado a educação, permitindo novas formas de 
+               aprendizado e personalização do ensino para cada aluno.</h1>
+          <p> Essa tecnologia traz benefícios para os estudantes e educadores,<br>
+               tornando a educação mais <span class="animated"></span></p>
+     </div>
+
+     <div class="dpt">
+          <div class="dpt-div">
+               <p>
+                    “A oportunidade de aprofundar a obtenção de conhecimento é 
+                    muito grande, desde que haja interesse por parte de alunos 
+                    e professores. O ChatGPT é uma fonte infinita de conversas. 
+                    Antes, não havia essa interlocução online”
+               </p>
+               <p>
+                    - Luís Guedes, professor da FIA Business School.
+               </p>
+               <p><a href=": https://www.estadao.com.br/educacao/escolas-devem-usar-chatgpt-para-potencializar-aquisicao-de-conhecimento-diz-especialista/">
+                    Acesse a fonte
+               </a></p>
+
+          </div>
+     </div>
+
+     <div class="video">
+          <video class="video_home" autoplay="" muted="" loop="" playsinline="">
+               <source src="{% static 'home/img/video_home.mp4' %}" type="video/mp4">
+          </video>
+     </div>
+
+     <div>
+          
+     </div>
+
+</body>
+
+</html>
