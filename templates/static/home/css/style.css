@@ -94,7 +94,7 @@ nav a:hover {
 /* ABAIXO DO HEADER */
 
 .video {
-     position: fixed;
+     position: absolute;
      top: 0;
      left: 0;
      width: 100%;
@@ -150,9 +150,7 @@ nav a:hover {
 
 .texto-principal span {
      color: #ea4c89;
-     padding: 5px;
-     border-radius: 10px;
-     background-color: white;
+     text-shadow: 0 0 30px #e4226d;
 }
 
 .dpt {
@@ -179,7 +177,67 @@ nav a:hover {
      text-align: right;
      color: #686868;
 }
+
 .dpt-div p:nth-child(3) {
      text-align: right;
      color: #929292;
 }
+
+/* ------------------------------------------ */
+
+.modo-uso {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 80px;
+     font-family: Arial, Helvetica, sans-serif;
+     height: 700px;
+     width: 100%;
+     padding: 0;
+     margin: 0;
+     
+}
+
+.col-1 {
+     display: flex;
+     flex-direction: column;
+     row-gap: 15px;
+     max-width: 40%;
+}
+
+.col-1 h1 {
+     font-size: 32px;
+}
+
+.col-1 button {
+     background-color: #ea4c89;
+     color: white;
+     width: 40%;
+     padding: 10px;
+     font-weight: 700;
+}
+
+.col-2 {
+     background-color: #fbfbfb;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 80%;
+     align-items: left;
+     padding: 30px;
+     max-width: 45%;
+     row-gap: 20px;
+     line-height: 25px;
+     text-align: justify;
+}
+
+.col-2 h1 {
+     font-size: 23px;
+     color: #ea4c89;
+}
+
+.col-2 span {
+    font-weight: 700;
+}
+
+
