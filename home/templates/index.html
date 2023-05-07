@@ -7,6 +7,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+     <link rel="icon" type="image/svg+xml" href="{% static 'home/img/logo.svg' %}">
      <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
      <script src="{% static 'home/js/app.js' %}"></script>
      <title>Student - A Sua Plataforma de Respostas</title>
@@ -14,16 +15,16 @@
 
 <body>
 
-     <header>
+     <header id="topo">
           <div class="container">
                <div class="logo">
                     <a href="#"><img src="{% static 'home/img/logo.svg' %}" alt="Logo da empresa."></a>
                </div>
                <nav>
                     <ul>
-                         <li><a href="#" class="menu-item">Sobre</a></li>
-                         <li><a href="#" class="menu-item">Preços</a></li>
-                         <li><a href="#" class="menu-item">Inteligência Artificial</a></li>
+                         <li><a href="#sbn" class="menu-item">Sobre</a></li>
+                         <li><a href="#price" class="menu-item">Preços</a></li>
+                         <li><a href="#IA" class="menu-item">Inteligência Artificial</a></li>
                     </ul>
                </nav>
                <a href="" class="cadastro">
@@ -37,7 +38,7 @@
      </header>
 
      <div class="texto-principal">
-          <h1>A IA tem revolucionado a educação, permitindo novas formas de 
+          <h1>A IA tem revolucionado a educação, permitindo novas formas de
                aprendizado e personalização do ensino para cada aluno.</h1>
           <p> Essa tecnologia traz benefícios para os estudantes e educadores,<br>
                tornando a educação mais <span class="animated"></span></p>
@@ -46,17 +47,17 @@
      <div class="dpt">
           <div class="dpt-div">
                <p>
-                    “A oportunidade de aprofundar a obtenção de conhecimento é 
-                    muito grande, desde que haja interesse por parte de alunos 
-                    e professores. O ChatGPT é uma fonte infinita de conversas. 
+                    “A oportunidade de aprofundar a obtenção de conhecimento é
+                    muito grande, desde que haja interesse por parte de alunos
+                    e professores. O ChatGPT é uma fonte infinita de conversas.
                     Antes, não havia essa interlocução online”
                </p>
                <p>
                     - Luís Guedes, professor da FIA Business School.
                </p>
                <p><a href=": https://www.estadao.com.br/educacao/escolas-devem-usar-chatgpt-para-potencializar-aquisicao-de-conhecimento-diz-especialista/">
-                    Acesse a fonte
-               </a></p>
+                         Acesse a fonte
+                    </a></p>
 
           </div>
      </div>
@@ -67,7 +68,7 @@
           </video>
      </div>
 
-     <div class="modo-uso">
+     <div class="modo-uso" id="IA">
           <div class="col-1">
                <h1>
                     Inteligência Artificial
@@ -80,23 +81,128 @@
                </button>
           </div>
           <div class="col-2">
-              <h1>Por que usar nossa IA?</h1> 
-              <p><span>Benefícios: </span>
-                    A inteligência artificial tem trazido muitos benefícios para o 
-                    mundo dos estudos, oferecendo recursos úteis para auxiliar 
+               <h1>Por que usar nossa IA?</h1>
+               <p><span>Benefícios: </span>
+                    A inteligência artificial tem trazido muitos benefícios para o
+                    mundo dos estudos, oferecendo recursos úteis para auxiliar
                     estudantes a alcançarem melhores resultados. Com a ajuda da IA,
-                     é possível personalizar a jornada de aprendizado, adaptando as
-                      informações de acordo com as necessidades de cada aluno. Além 
-                      disso, a IA pode fornecer feedback instantâneo, identificando 
-                      possíveis erros e sugerindo melhores estratégias de estudo.
+                    é possível personalizar a jornada de aprendizado, adaptando as
+                    informações de acordo com as necessidades de cada aluno. Além
+                    disso, a IA pode fornecer feedback instantâneo, identificando
+                    possíveis erros e sugerindo melhores estratégias de estudo.
                </p>
                <h1>
                     Modo de uso
                </h1>
+               <p><span>Passo 1 - <strong>Cadastro:</strong></span> É importante realizar o cadastro, pois não será
+                    possível utilizar a IA sem uma conta;</p>
+               <p><span>Passo 2 - <strong>Login:</strong></span> Efetue o login para acessar o painel;</p>
+               <p><span>Passo 3 - <strong>Painel:</strong></span> Acessar o painel administrativo;</p>
+               <p><span>Passo 4 - <strong>Divirta-se:</strong></span> No menu esquerdo, clicar em "Playground";</p>
+               <p><span>Passo 5 - <strong>Materia:</strong></span> Selecione a matéria que deseja consultar;</p>
+               <p id="sbn"><span>Passo 6 - <strong>IA:</strong></span> Faça sua pergunta e deixa a IA te ajudar!</p>
+          </div>
+     </div> 
 
-               
+     <div class="sobre-nos" >
+          <div class="sbn-title">
+               <h1>
+                    Sobre nós
+               </h1>
+          </div>
+          <div class="topicos">
+               <div class="topicos-child">
+                    <img src="{% static 'home/img/human-and-IA.jpg' %}"
+                         alt="Braço robótico e humano tentando se tocar.">
+                    <h1>Importância da IA para estudantes</h1>
+                    <p>
+                         A IA pode ser uma ferramenta valiosa para estudantes em sua jornada educacional,
+                         fornecendo suporte para aprimorar seus estudos e alcançar melhores resultados.
+                         Com o uso de IA, os estudantes podem obter respostas imediatas para suas dúvidas,
+                         receber feedback personalizado sobre seu desempenho e ter acesso a recursos educacionais
+                         personalizados, tornando seu processo de aprendizagem mais eficiente e efetivo.
+                    </p>
+               </div>
+               <div class="topicos-child">
+                    <img src="{% static 'home/img/como-funciona.jpg' %}"
+                         alt="Braço robótico com um cerébro fluantando sobre.">
+                    <h1>Como funciona a IA</h1>
+                    <p>
+                         A IA utiliza algoritmos e modelos de aprendizado de máquina para aprender com dados e
+                         informações.
+                         Quanto mais dados são inseridos, mais inteligente a IA se torna, permitindo que ela tome
+                         decisões
+                         e forneça soluções com base em padrões e previsões.
+                    </p>
+               </div>
+               <div class="topicos-child">
+                    <img src="{% static 'home/img/AI.jpg' %}" alt="Face de um robô com AI escrito na testa.">
+                    <h1>Aplicações da IA</h1>
+                    <p>
+                         A IA é amplamente utilizada em várias áreas, incluindo saúde, finanças, indústria, automação
+                         e muito mais. No campo educacional, a IA tem sido usada para fornecer assistência aos
+                         estudantes
+                         em seus estudos, oferecendo suporte na compreensão de conceitos complexos, identificando
+                         lacunas
+                         em seu conhecimento e sugerindo estratégias de estudo personalizadas.
+                    </p>
+               </div>
           </div>
      </div>
+
+     <div class="precos">
+          <div class="sub-price"  id="price">
+               <h1>
+                    Preços
+               </h1>
+               <h2>
+                    GRÁTIS!
+               </h2>
+               <h3>
+                    * Por tempo limitado
+               </h3>
+               <p>
+                    É isso mesmo que você viu!
+                    Aproveite a oportunidade única de experimentar nossa ferramenta
+                    <span>completamente gratuita durante a fase beta!</span> Como parte do nosso
+                    compromisso em tornar nossa ferramenta o melhor possível, estamos
+                    oferecendo acesso gratuito a todos os recursos e funcionalidades
+                    durante este período. Não perca a chance de se beneficiar dessa
+                    oferta especial e experimentar a nossa ferramenta <span>sem custos</span>.
+                    Aproveite agora mesmo e descubra como nossa ferramenta pode
+                    ajudá-lo a atingir seus objetivos. Lembre-se,
+                    essa oferta é por <span>tempo limitado</span>, então aproveite enquanto pode!
+               </p>
+               <button>
+                    Eu quero agora!
+               </button>
+          </div>
+     </div>
+
+     <footer>
+          <div>
+               <a href="#topo">
+                    <div class="voltar-topo">
+                         <img src="{% static 'home/img/seta-para-cima.svg' %}" alt="Seta para cima.">
+                         <p>Voltar ao início</p>
+                    </div>
+               </a>
+          </div>
+
+          <div class="logo">
+               <img src="{% static 'home/img/logo.svg' %}" alt="Logo da Empresa">
+          </div>
+          <div class="links">
+               <a href="#">Início</a>
+               <a href="#sbn">Sobre</a>
+               <a href="#price">Preços</a>
+               <a href="#IA">Inteligência Artificial</a>
+          </div>
+          <div class="copy">
+               <p>© 2023 Student. Todos os direitos reservados.</p>
+          </div>
+
+     </footer>
 
 </body>
 

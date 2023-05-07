@@ -7,6 +7,9 @@
      text-decoration: none;
 }
 
+html {
+     scroll-behavior: smooth;
+}
 
 header {
      background-color: #ffffff;
@@ -191,11 +194,10 @@ nav a:hover {
      align-items: center;
      column-gap: 80px;
      font-family: Arial, Helvetica, sans-serif;
-     height: 700px;
      width: 100%;
-     padding: 0;
+     padding: 80px 0;
      margin: 0;
-     
+
 }
 
 .col-1 {
@@ -215,6 +217,7 @@ nav a:hover {
      width: 40%;
      padding: 10px;
      font-weight: 700;
+     cursor: pointer;
 }
 
 .col-2 {
@@ -225,9 +228,8 @@ nav a:hover {
      height: 80%;
      align-items: left;
      padding: 30px;
-     max-width: 45%;
-     row-gap: 20px;
-     line-height: 25px;
+     max-width: 40%;
+     row-gap: 7px;
      text-align: justify;
 }
 
@@ -237,7 +239,196 @@ nav a:hover {
 }
 
 .col-2 span {
-    font-weight: 700;
+     font-weight: 700;
 }
 
+.col-2 strong {
+     color: #ea4c89;
+}
 
+.col-2 p {
+     line-height: 25px;
+}
+
+.col-2 h1:nth-of-type(2) {
+     padding: 15px 0 0 0;
+}
+
+/* ------------------------------------------ */
+
+.sobre-nos {
+     font-family: Arial, Helvetica, sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     row-gap: 25px;
+     margin-top: 50px;
+}
+
+.sbn-title {
+     height: 100%;
+     width: 50%;
+     background-color: #ea4c89;
+     text-align: center;
+     font-size: 12px;
+     color: #ffffff;
+     padding: 10px;
+     border-radius: 20px 0;
+     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topicos {
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     column-gap: 20px;
+}
+
+.topicos-child {
+     width: 400px;
+     margin: 0 10px;
+}
+
+.topicos-child img {
+     width: 100%;
+     height: 200px;
+     margin-bottom: 10px;
+     object-fit: cover;
+     border-radius: 0px 20px;
+     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topicos-child h1 {
+     font-size: 1.2rem;
+     margin-bottom: 5px;
+}
+
+.topicos-child p {
+     line-height: 25px;
+}
+
+/* ------------------------------------------ */
+
+.precos {
+     display: flex;
+     justify-content: center;
+     font-family: Arial, Helvetica, sans-serif;
+     row-gap: 25px;
+     margin-top: 150px;
+     background-color: #f2f2f2;
+     padding: 100px 0 100px 0;
+}
+
+.sub-price {
+     display: flex;
+     max-width: 50%;
+     flex-direction: column;
+     row-gap: 15px;
+     background-color: white;
+     padding: 100px;
+     box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .11), 0 0.1875rem 0.4375rem rgba(0, 0, 0, .13)
+}
+
+.sub-price h1 {
+     color: #000;
+     padding: 0 0 20px 0;
+}
+
+.sub-price h2 {
+     color: #4CAF50;
+     margin-bottom: -15px;
+}
+
+.sub-price h3 {
+     color: #929292;
+     font-size: small;
+}
+
+.sub-price p {
+     line-height: 30px;
+}
+
+.sub-price button {
+     background-color: #ea4c89;
+     color: white;
+     max-width: fit-content;
+     padding: 15px;
+     font-weight: 700;
+     font-size: 17px;
+     margin-top: 25px;
+}
+
+.sub-price span {
+     background-color: #e8e8e8;
+     padding: 5px;
+}
+
+/* ------------------------------------------ */
+
+footer {
+     background-color: #262626;
+     color: #fff;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     font-family: Arial, Helvetica, sans-serif;
+     justify-content: space-around;
+     padding: 50px 0;
+}
+
+.logo img {
+     height: 30px;
+}
+
+.links a {
+     color: #fff;
+     margin-right: 20px;
+     text-decoration: none;
+}
+
+footer a:hover {
+     text-decoration: underline;
+}
+
+.policy:hover {
+     text-decoration: underline;
+     cursor: pointer;
+}
+
+.policy,
+.copy {
+     margin-top: 10px;
+}
+
+/* ------------------------------------------ */
+
+.voltar-topo {
+     position: fixed;
+     background-color: #d9d9d9;
+     bottom: 20px;
+     right: 20px;
+     height: 40px;
+     display: none;
+     opacity: 0;
+}
+
+.voltar-topo img {
+     height: 25px;
+}
+
+.voltar-topo p {
+     font-family: Arial, Helvetica, sans-serif;
+     color: #000;
+}
+
+.voltar-topo.mostrar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     opacity: 1;
+     visibility: visible;
+     flex-direction: row;
+     column-gap: 5px;
+     text-decoration: none;
+     padding: 0 15px 0 7px;
+}
