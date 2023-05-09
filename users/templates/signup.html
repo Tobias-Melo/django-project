@@ -17,27 +17,37 @@
           </div>
           <div class="form">
                <div class="voltar-princ">
-                    <a href=""><div class="voltar"> 
-                         <img src="{% static 'signup/img/seta-para-a-esquerda.svg' %}" alt="Seta para a esquerda."> 
-                         <p>Voltar</p>
-                    </div></a>
+                    <a href="">
+                         <div class="voltar">
+                              <img src="{% static 'signup/img/seta-para-a-esquerda.svg' %}" alt="Seta para a esquerda.">
+                              <p>Voltar</p>
+                         </div>
+                    </a>
                </div>
 
                <div class="logo">
                     <img src="{% static 'signup/img/logo.svg' %}" alt="Logo da empresa.">
                </div>
+               
+               {% if messages %}
+               <ul class="messages">
+                    {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                         {% endfor %}
+               </ul>
+               {% endif %}
 
-               <form>
+               <form action="{% url 'signup' %}" method="POST"> {% csrf_token %}
                     <h1>Crie uma conta</h1>
                     <div class="form-group">
-                         <input type="text" id="nome" name="nome" placeholder="Nome" required>
-                         <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                         <input type="text" id="name" name="name" placeholder="Nome" required>
+                         <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" required>
                     </div>
                     <div class="form-group">
                          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
                     <div class="form-group">
-                         <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                         <input type="password" id="password" name="password" placeholder="Senha" required>
                     </div>
                     <input type="submit" value="Cadastrar-se">
                </form>
