@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'signup/css/style.css' %}">
+     <link rel="icon" type="image/svg+xml" href="{% static 'home/img/logo.svg' %}">
+     <title>Cadastro</title>
+</head>
+
+<body>
+     <div class="container" style="background-image: url('{% static 'signup/img/Brain.jpg' %}');">
+          <div class="image">
+          </div>
+          <div class="form">
+               <div class="voltar-princ">
+                    <a href=""><div class="voltar"> 
+                         <img src="{% static 'signup/img/seta-para-a-esquerda.svg' %}" alt="Seta para a esquerda."> 
+                         <p>Voltar</p>
+                    </div></a>
+               </div>
+
+               <div class="logo">
+                    <img src="{% static 'signup/img/logo.svg' %}" alt="Logo da empresa.">
+               </div>
+
+               <form>
+                    <h1>Crie uma conta</h1>
+                    <div class="form-group">
+                         <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                         <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                    </div>
+                    <div class="form-group">
+                         <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                         <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    </div>
+                    <input type="submit" value="Cadastrar-se">
+               </form>
+          </div>
+     </div>
+
+</body>
+
+</html>
